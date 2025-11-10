@@ -26,17 +26,17 @@ document.addEventListener("DOMContentLoaded", () => {
           participantsHTML = `
             <div class="participants-section">
               <strong>Participants:</strong>
-              <ul class="participants-list" style="list-style: none; padding-left: 0;">
+              <ul class="participants-list no-bullets">
                 ${details.participants
                   .map(
                     (email) =>
-                      `<li class="participant-item" style="display: flex; align-items: center; gap: 0.5em;">
+                      `<li class="participant-item flex-align">
                         <span class="participant-email">${email}</span>
                         <button class="delete-participant-btn" title="Remove participant" data-activity="${encodeURIComponent(
                         name
                       )}" data-email="${encodeURIComponent(
                         email
-                      )}" style="background: none; border: none; color: #c00; cursor: pointer; font-size: 1.1em;">
+                      )}">
                           &#128465;
                         </button>
                       </li>`
