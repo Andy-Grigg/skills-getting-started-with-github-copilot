@@ -1,2 +1,7 @@
+pre-commit
+ruff
+pytest
+httpx
+pytest-asyncio
 fastapi
 uvicorn
